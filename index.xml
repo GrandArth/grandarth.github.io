@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Fifth Information Room</title>
-    <link>http://localhost:1313/</link>
+    <link>https://grandarth.github.io/</link>
     <description>Recent content on The Fifth Information Room</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Jan 2022 11:55:34 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 11:55:34 +0800</lastBuildDate><atom:link href="https://grandarth.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EVA的诅咒</title>
-      <link>http://localhost:1313/blog/the-curse-of-evangelion/</link>
+      <link>https://grandarth.github.io/blog/the-curse-of-evangelion/</link>
       <pubDate>Sat, 22 Jan 2022 11:55:34 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/the-curse-of-evangelion/</guid>
+      <guid>https://grandarth.github.io/blog/the-curse-of-evangelion/</guid>
       <description>source: https://www.youtube.com/watch?v=rHIvs0Q-uKI&amp;amp;t=1105s
 新世纪福音战士新剧场版3.33常被看作是EVA系列中最特立独行的一部。 故事中接连不断的事件，解释的匮乏，让网上很多人都感到困惑。 人们常说这部电影非常糟糕，让EVA的名头蒙羞。 然而，3.33是一个关键。是理解新剧场版代表什么的关键， 也是理解其作为对EVA整个系列的批评的主张的关键。
 但想要理解这个，你首先要对EVA TV动画和电影《End Of Evangelion》的意义略知一二。
@@ -41,10 +41,10 @@
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://grandarth.github.io/posts/my-first-post/</link>
       <pubDate>Sat, 22 Jan 2022 11:17:19 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://grandarth.github.io/posts/my-first-post/</guid>
       <description>Test 中文测试</description>
     </item>
     
