@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Fifth Information Room</title>
-    <link>https://grandarth.github.io/</link>
-    <description>Recent content on The Fifth Information Room</description>
+    <title>Translations on The Fifth Information Room</title>
+    <link>https://grandarth.github.io/translation/</link>
+    <description>Recent content in Translations on The Fifth Information Room</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Jan 2022 11:55:34 +0800</lastBuildDate><atom:link href="https://grandarth.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 11:55:34 +0800</lastBuildDate><atom:link href="https://grandarth.github.io/translation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EVA的诅咒</title>
       <link>https://grandarth.github.io/translation/eva%E7%9A%84%E8%AF%85%E5%92%92/</link>
@@ -37,15 +37,6 @@
 第三个片段发生在电车上。这时，真嗣意识到了人们无法且根本不愿意去尝试向他人展现真实的自我， 因为真正的敞开心胸会让你变得脆弱，更容易受到伤害。 无法理解他人的真实自我这一事实带来一种多义性和无法消解的内在焦虑。 无法真正和他人相连的事实让真嗣更加孤独，更加憎恨自己。
 这在最终的梦境序列达到了高潮，真嗣把自己存在的核心展示给了明日香。 他帮助他人并获取赞同的想法不过是期待他人会用爱来回报他的一次半心半意的尝试。 真嗣认为对他人的无私奉献可以给他的人生带来意义，帮他摆脱孤独感。 但这展现了他真正的想法： 只要有爱的回报，真嗣愿意去爱任何人，但这也代表他并不爱任何人。 他只是把他人看作是追求逃避主义的工具， 对他本身的爱反倒是次要的。这成了真嗣最后的哀嚎，对任何愿意爱他，愿意和他建立联系的人的哀嚎，哪怕他没有能回报的东西。 对这一点，明日香拒绝了： 没有人有任何为你而活，单凭你存在就要接受你的义务。
 无法接受绝对的孤独，无法给活着找到任何接口， 真嗣被虚无主义和破坏冲动吞噬了。</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://grandarth.github.io/posts/my-first-post/</link>
-      <pubDate>Sat, 22 Jan 2022 11:17:19 +0800</pubDate>
-      
-      <guid>https://grandarth.github.io/posts/my-first-post/</guid>
-      <description>Test 中文测试</description>
     </item>
     
   </channel>
