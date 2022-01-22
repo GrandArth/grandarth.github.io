@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Habits of Effective Artists - Translation Collection</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="Curse.html"><strong aria-hidden="true">1.</strong> The Curse of Evangelion</a></li><li class="chapter-item expanded "><a href="TSOR.html"><strong aria-hidden="true">2.</strong> The Structures of Ravnica</a></li><li class="chapter-item expanded "><a href="TCOR.html"><strong aria-hidden="true">3.</strong> The Colors of RAVNICA</a></li><li class="chapter-item expanded "><a href="PASWJ.html"><strong aria-hidden="true">4.</strong> Physical Animation in Star Wars Jedi: Fallen Order</a></li><li class="chapter-item expanded "><a href="THOEA.html" class="active"><strong aria-hidden="true">5.</strong> The Habits of Effective Artists</a></li><li class="chapter-item expanded "><a href="CCCIPCCA.html"><strong aria-hidden="true">6.</strong> Creating Compelling Characters</a></li><li class="chapter-item expanded "><a href="DOTA.html"><strong aria-hidden="true">7.</strong> Death of the Author</a></li><li class="chapter-item expanded "><a href="2WORLDs.html"><strong aria-hidden="true">8.</strong> Achieving Two Worlds, Every Year</a></li><li class="chapter-item expanded "><a href="TPJBLWCY.html"><strong aria-hidden="true">9.</strong> The Philosophy of Jolee Bindo: Love Will (not) Condemn You</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Translation Collection</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="the-habits-of-effective-artists"><a class="header" href="#the-habits-of-effective-artists">The Habits of Effective Artists</a></h1>
+<p><a href="https://www.youtube.com/watch?v=vM39qhXle4g">Source</a></p>
+<p>大家好!
+去年我和我表弟打了个价值1000美元的赌。
+一般，兄弟姐妹都是在一些有趣的事情上的打赌的，比如说在摩托车上做个后空翻，或者差不多疯的事情。
+但我的赌是纯艺术性的。
+这个赌是：我必须要在六个月之内在ArtStation上拿到1000个赞，而且这1000个赞必须是要给2D绘画的，而我非常不擅长2D绘画。
+为了让这件事更有趣，如果我真的成功了，我其实什么都得不到。
+这个赌是：如果我输了，我要给他1000美元，如果我赢了，我什么都得不到。
+那么我为什么要这样做呢？对吧？为什么我要让自己经历这样的事情？
+总的来说，我一直都想学画画。
+但不知怎么，一直都找不到动力，之后我了解到了一个叫“损失厌恶”的概念，
+这是说如果你…
+在你可能会失去什么东西的时候，你会更有动力去做事。
+而它真的有用！
+在之后六个月，几乎每天，我都在打型，上色，上周末的画画班，各种东西，学画画。
+而我很高兴的宣布，在离挑战时限还有三天的现在，我让我的表弟失望了。
+我在Artstation上拿到了1000赞！
+当然，我不是来炫耀的。我说这些，是因为我在同时学到了很多有关画画的事情。
+我学会了如何成为一个高效的艺术家
+因为，在这之前，我学习Blender的方法和大部分人学新东西的方法一样。
+就是说：他们只在有空的时候学新的东西，他们慢慢悠悠的，看看教程，诸如此类的东西。
+但当你押上了什么东西的时候，比如1000美元，它真的让你怀疑这样究竟能否行的通。
+我做的事情是：我提炼出了7个最大的教训，7个最重要的习惯，把他们融合在了这次展示里。
+在这里面我也会提到一些当代世界级专业人士有的习惯，你会学到专业人士，比如Stephen King，Pixar甚至KanyeWest之间的共同点。
+那么，各位感兴趣吗？
+好的，不错，耶！
+第一个习惯貌似非常简单：
+每日都要动手</p>
+<p>你需要在你的任务，你的作品，你有的任何创作性目标上，每天，都花上一些时间。
+现在，你想了想然后觉得“为什么每天都要？”
+“为什么我就不能等到我有时间的时候做这些事？”
+“如果我从周一到周五每天干一小时，到了周末那不就是5小时吗？”
+“为什么我就不能在周六周日干5个小时呢？”
+好的，这是因为，这些我们想象中的大块时间
+他们很少出现
+这就是为什么，从古至今大部分伟大的艺术家都是以每天都花时间的方式，在他们的领域写书，音乐，或者任何东西上取得成功的。
+举个例子，J.K.Rowling，在五年的期间里写出了霍格沃茨，哈利波特的世界。
+她是在养育一个孩子的同时做这件事的，她没有等待这些大段的时间，没有等某个遥远周末，等那些她把孩子交给保姆之后获得的闲暇。
+她在琐碎的夹缝间添砖加瓦，每天如此。
+JerrySeinfeld在写Seimfeld系列的时候，在每个创作笑话的日子上都标上了X，在他有了连着的几天之后，他的下一个目标就是避免打破这个锁链。
+MikeBirbiglia，一个喜剧演员和电影剧本作家，发现他和其他人有过多的会议，导致他开始不断推迟剧本写作。
+于是，他做了个有趣的事情，他给自己安排了一场和剧本的会议。
+每天，在咖啡馆在笔记本前面坐两个小时，不断打字。
+他发现只要这样做，他就不会拖延写作了。
+就我个人来说，一手经验，“每天都要上手”听上去确实非常简单
+谁不想每天都在这些事上花时间呢？
+谁都想这么做
+那人们为什么没有这样呢？
+事实是：你在办公室工作了一天了，听你的上司瞎扯各种东西，你回家了，你累垮了，你最不想做的事情就是用学点新东西来惩罚自己了。
+于是，你开始看Netflix，逛Reddit，打电玩，反正是这类东西。</p>
+<p>我发现对我来说有效的一个技巧是，同意去做最少量的活
+在我这儿就是拿出铅笔，在纸上画一条线
+于是在我觉得“我什么都做不了，我什么都不想做”
+“今天太累了，我就想休息”的日子里
+我会说“好吧，我能不能就画一条线？”于是我回答“一条线还是可以的”。
+事实上，等你清理了桌面，拿出了画本，你准备好了铅笔，拿了削笔刀，橡皮，你拉开座位，调好光照，你坐下，等你都做完了这些了，你当然不可能画一条线就停手。
+在你意识到之前，你已经花了几个小时在这上了。
+你就这样忘记了时间。</p>
+<p>这就是说“起步”一般是最难的部分，只要你能起步，那最后都不会太差。
+对我来说这很有效。
+当然了，“动机”是个大得多话题，如果你感兴趣，你可以找到很多有关这个书。
+记得每天都要上手！
+这总要胜过短途冲刺。
+“胜过”这个词现在看起来很有趣了，对吧？
+就好像意思改变了一样。</p>
+<p>第2：追求量大，而不是追求完美
+实话实说，当事关艺术作品的时候，在座的各位谁会觉得自己是完美主义者？
+举手
+大部分人，对吧？
+大部分艺术家都受此折磨。
+而且很多艺术家都会觉得他们强处之一就是身为完美主义者。
+现在，在你追求高标准的完美，不断完善先前的工作的时候，身为完美主义者可能会阻碍你的成长。
+因为这会让你达不到下次突破，无法学到下一个教训。
+IraGlass，电台节目《This American Life》的主持人
+完美的总结了这个观点，他认为你能做的最重要的工作，就是大量的工作，只有通过大量的工作，你才能缩减差距。
+我想举个更尽人皆知的例子，毕加索。
+大部分人真的只能认出他作品中的一少部分，他会说“是啊，毕加索的作品，我知道的”。
+但实际上的，他的作品库包含800多张彩画，1200多个雕塑，2800个陶瓷，12000张素描画，而这还不包括任何版画，地毯，壁毯。
+毕加索有大量的作品，而我们中的大多数只能认出大作，真的成功的作品
+他有这样大量的作品！
+如果你在想，作品的量和成功是不是有什么联系，研究者们认为确实有关系。
+他们学习了来自贝多芬，莫扎特之流的15000个音乐作品
+他们发现，在5年的时间段里，产出更多作品的作曲家更有可能真的创作出一个大热作品。
+作品的量真的很重要。
+从个人角度来说，我发现在创作这些2D作品的时候，在完美化阶段，就是当你完成绝大部分，只剩下的最后一小点的阶段。
+你只是在调整他，开足放大倍数，给光景加上优质的细节，都是这些东西。
+这些东西消耗很多时间。
+而有趣的是，你在这最后一阶段，其实并不能学到很多东西。
+你在之前的东西中学到的更多。
+铺开大面的形状，学习脸部的解剖结构，这些东西！
+你大部分知识都是从这些环节里学到的，最后的那一点东西，那是很简单的。
+那就是把参考放在一边，放大，然后画就可以了。
+而这些东西是很耗时间的，我的意思是，如果你是个完美主义者，你很难得到下一次教训，迎来下一次突破。
+追求量大，而不是追求完美！
+开始你的下一个作品吧！
+这是第二个。</p>
+<p>第三：偷
+好的，我们看着自己偶像的作品，常会认为他们天生就是要做这些的。
+ThatRembrandt他第一次画画的时候，就知道如何安排光影。
+或者Quentin Tarantino生来就是要创作欢乐有趣的故事的。
+但这不是人脑的工作方式，它总是基于先前的想法的。
+我们的偶像，那些让我们觉得“这作品原创性好高，他们是怎么做到的？”的作品，
+他们也是基于他们的偶像，他们喜欢的东西制作的。
+这就是为什么，如果你纵观历史，你会发现大部分杰出的艺术家都鼓励偷窃。
+DavidBowie说过，“我只会去学习我可以从中偷窃的作品”。
+SteveJobs在采访里公开承认过，他们从不觉得偷窃好点子是可耻的。
+这里有一条Banksy从毕加索那里偷来的有关偷窃的名言：
+“糟糕的艺术家模仿，伟大的艺术家偷窃”
+我很喜欢这个
+如果你想知道，为什么这些人都建议我们偷窃？
+偷窃是不道德啊！
+我们都是听着这个长大的！
+偷窃是错的！
+但好的贼和坏的贼是不一样的。
+《Steal Like an Artist》这本书里面概述了这个想法。
+这里有个清单，但真正吸引我的，最重要的是从上往下第三个：
+从许多人那里偷VS从一个人那里偷
+只从一个人那里偷，那叫做剽窃，
+从很多人那里偷，人们根本认不出来，
+或者，就像是Gary Panter所说的一样：
+如果你只受一个人影响，所有人都会说你就是XX第二
+但如果你从几百人那里抢来想法，所有人都会说你真是原创先锋
+所以我给个建议：找到你的偶像
+找到你现在真的喜欢的东西
+现在有了互联网，这是非常容易就能做到的
+你可以直接上ArtStation，找找你喜欢的东西
+这就是我做的，在我开始这次挑战之前，我新建了一个印象笔记文件
+我登陆ArtStation，复制粘贴我喜欢的东西，放到一个文件里
+别多想，别分辨
+我甚至都没标上作者引用
+我甚至都不知道有些人是谁
+我只管复制粘贴
+这以后既可以是参考，也可以是激励的源头
+当我画脸部的时候
+我感觉眼睛有什么地方不对劲，于是我打开这个文件
+看看上面不同的眼睛画法，我就像是“噢，他们是这么做，他们又是那么做的”
+以及，在特别黑暗的日子里，当我一点动力都没有的时候
+这也可以作为一种激励
+因为你打开它的时候，你就回想起来你的初心
+你真正喜欢的东西
+不用想什么古典名家一类的东西
+而是你真正热爱的东西
+这就是“偷”了
+找到你的偶像，从他们那里偷</p>
+<p>#4有意识地学习
+请听过“熟能生巧”的观众举手
+几乎所有人！
+另一句类似的话自然是
+“如果你想变得擅长某件事情，你必须花上10000小时去练习”，对吧？
+好吧，我以前也是这么认为的
+我在播客或者教程里给别人的建议也是这个
+如果有人发邮件来，说：
+“我想擅长Blender”
+我就会说“你得练习！”
+“练习，练习，再练习”
+但这并不是全部
+因为人脑天生就倾向于避免痛苦
+事实上，练习，如果你不谨慎
+很容易变成拖延的源头
+我们倾向于认为练习就像是：我花更多的时间
+结果就会更好看，就像直线图
+但实际上它其实是像这样的：
+你在开始的时候有一些增长
+但之后，只靠单纯的练习，你就会有点停滞了
+在我开始我的挑战之前，我给一些我喜欢的人发了邮件
+我说“嗨，我能问你几个有关绘画的问题吗？”
+他们中的一个是Efflam Mercier
+我喜欢他的作品
+他说了一些我从没听说过的事情
+对时间最大的浪费之一就是，不知道你现在所做事情的意义
+或者换句话说“瞎涂鸦”
+过了一段时间，我才明白他说这句话的意思
+我喜欢自己做的一件事是，在我居家工作的时候
+我只用电脑工作
+而且还是种非常孤独的工作
+我和人说话的机会不多
+于是一天到头
+有些时候我就是单纯喜欢听别人讲话
+于是我戴上耳机，听播客
+BillBurr或者YourMom's House这类播客
+好多喜剧演员的表演
+这让我很放松
+于是我是这么做的：我打开一个笔记本
+我戴上耳机，我播放博客，然后我就...画草图
+心里没有什么具体的目标，我就单纯的画而已
+而我做的并不是很好
+其实真的很糟糕
+有一些看上去甚至都不像是人了
+但我想到，你懂的，千古名言：
+“熟能生巧”如果我一直这么做，我就会进步
+但我在翻看先前的作品的时候，我翻过那些书页
+我注意到在好几周之前开始
+他们就没有什么区别了
+我并没有进步
+他们看上去其实都一样
+之后我在想：“我在这上面了花了越来越多的时间，但我并没学到任何东西”
+于是我想到“好吧，我得回去然后学点东西”
+我实际上很讨厌看教程
+一些教程，特别是绘画理论教程，真的是特别枯燥
+我的老婆拍下了我在看面部解剖课程时的样子
+那真是我上过的最无聊的课程之一
+但我还是做了，而且我讨厌这个
+说到底，我不想挑战自我
+我相信你也可以体会到这一点
+在你经过艰辛的一天之后，如果你要打开Blender
+有些时候你就想做些你早就会的事情，对吧？
+我最讨厌看这些教程了，
+但在这个过程里，我学到了一些东西
+我发现我完全记错了几个重要面部的尺寸
+我一直在画完全错误的脸
+除非我知道了这点，不然他们永远都不会变好的
+在我学完了这些之后，我画的脸几乎马上提升了
+就像这样
+因为我停下来重新去学习了
+如果我继续进行单调的练习，“熟能生巧”，这些画永远都不会变好的
+真的，这个图要更正确一些</p>
+<p>当你在有意识地学习的时候，你就能上一个台阶
+比起单纯的练习，你会在领域里提升的更快
+别误会，练习真的很重要
+但单纯的练习会让你达成完美吗？
+我并不这么认为
+只有有意识地学习才可以！
+这有时可能会无聊，但这是成长的最快方式</p>
+<p>休息！
+有谁曾努力用Blender制作一个场景
+然后你就突然卡住了
+你摸到了瓶颈
+你不知道究竟发生了什么，你心力交瘁了
+谁有过这样的经历？
+噢，是的，很多人！
+好吧，这让我安心了
+我不是一个人
+我经常有一种经验
+你也可能有过
+就是如果你走开然后刷刷碗
+然后你突然就想出了解决办法
+这真的很怪
+可能在淋浴的时候
+你在什么地方然后突然想到“噢，对啊，我可以把闪电放在另一边”
+“我可以改变那个衬衫的颜色，这样就和别东西相配了”
+在你不一头扎在工作上的时候，你就会突然想到这些东西
+这其实是大多数专业艺术家都会采用的策略
+比如，Stephen King，他认为
+他能知道啥？
+StephenKing说，任何小说，不论篇幅
+都不应该花超过3个月的时间来完成初稿
+在这之后，在三个月之后，你应该停下笔
+在未来的六周之内不看它
+六周，干点别的
+度个假或者写别的书
+做点别的事情，在这之后
+你重新回到这上来，就会感觉你在读别人的作品
+你会从一个完全不同的角度来看待它
+一种如果你就坐在那里，就一直不停的打字的话，永远都得不到的视角
+从个人经验来说，我花了几个晚上画了这个来自《星球大战》的Rey
+我并不是很清楚要往什么方向改善
+我在想“嗯，黑加白”“古典绘画，整个黑色背景，就这类东西”
+我真的不清楚该走向何方
+于是我中断了三天
+我给其他的画开了个头，做了些别的东西
+三天之后，当我重新回到这上面来的时候
+我记得我有了种完全和它脱离的感觉，而且是以一种好的方式脱离
+在这种感觉下，我能以一种，像是不再“受限于它”的感觉来画画
+像是我能用它进行实验
+我记得我当时发现了一个笔刷
+一个从来没见过的笔刷，然后就在画上开画了
+我在想“哇哦，这挺有趣的”
+然后在15分钟之内，我做了这种有趣的效果
+这种“原力”的感觉，像是奇怪的气场
+如果我在那2天之后还一直画画，我永远都不会画出那个的
+那个中断，那段休息时间，给了我和它脱离的时间
+有这样的休息时间是非常重要的
+这实际上也是我们现在在Blender Guru里采用的策略
+如果我们有三个想创作的艺术作品，比如做宣传片
+像是“Grass Essentials”宣传片之类的
+我们不会一下子把三个全完成，像是：我们彻底做完一个，开始做下一个，然后下一个
+我们会同时做这3个
+我们这个做一天，那个做一天，另一个做一天，然后循环
+每次你循环回到作品上的时候，你重复一个周期，一点接一点的回顾它
+你会看到以前从来没注意过的事情
+我相信你们所有人都有同感
+这就是休息
+休息一下，用全新的眼光审视你的作品</p>
+<p>#6是反馈
+当我们想到“原创型思想家”，历史上伟大的艺术家
+我们会觉得他们是原创的，那么他们一定对批评，对反对者，那些说着“这不好，不应该这么做”的人不屑一顾，他们只需要埋头工作就可以了
+因为他们知道自己在做正确的事情
+但如果你真的审视一下专业艺术家，听听访谈
+或者自传，你会发现事实恰恰相反
+他们比谁都更追求反馈
+这就是我纵观音乐家，作家等等之后，发现的事实
+他们全都追求可观数量的反馈
+举个例子，Pixar，他们有一个叫“心声信任”的房间，这个房间就是
+当你走进这个房间的时候，你就不用考虑职位，可以说任何真实想法
+你可能只是个刚上任的基层画师，但你可以直接坐下然后说“这个电影太吃屎了”
+坐在你旁边的也许就是迪士尼的CEO
+而你们两人表达看法的权力是一样的，你不会被开除
+你不会有任何恶果
+这是个自由说出心声的过程
+而这，是Ed Catmull，Pixar的奠基人之一，认为的，他们成功中最重要的一部分
+因为他们早期的电影很糟糕，然后他接着说了很长一段话，来提醒人们他们电影的早期版本是多么的糟糕，
+他说，这些电影不是在做完第一天的时候就是杰作了
+它要通过一个迭代和反馈的过程，以至于他们把电影从最初的版本改的完全不一样了
+这是它能最终达到那个高度的唯一途径
+说到寻求反馈的人，你能想到的，最没有这种倾向的人，也许是他
+一个看上去最清楚知道自己该怎么做的人
+KanyeWest
+如果你审视一下他最著名的专辑
+《My Beautiful Dark Twisted Fantasy》这张专辑得到了批评家们的一致热爱
+有人说这是过去十年里，甚至过去几十年里
+甚至我们这一代里最好的hip-hop专辑
+被所有批评家一致喜爱
+这其实是好几个艺术家的作品
+我其实看了一眼，一共38个艺术家、制作人为这个专辑做出了贡献
+他在夏威夷租了间工作室，邀请了他喜欢的艺术家
+比如Jay-Z，Rihanna，Drake还有一堆人来制作这张专辑
+同时也给出批评意见
+PushaT在一次采访中提到了这一过程
+他基本上会把人带进一个房间然后说：
+“你觉得这个怎么样？”他真诚的对他们的看法很感兴趣
+你把这个和Pixar的方法对比，你会发现这听上去像是类似的过程
+没有人会被找麻烦
+只是真诚的反馈
+而这就是能促成成功的东西
+来给个3D行业的例子，毕竟这算是个3D行业会议
+GnomonSchool
+谁知道Gnomon？
+你们听说过Gnomon吗？
+他们算是这个世界上第一的CG学校
+我记得他们有97%的就业率吧
+在其之下，第二的学校应该是50%
+疯了，他们在那里做的东西真是令人震惊
+我实际上去了澳大利亚，墨尔本，他们在那里有个周末活动
+我去参加了
+我有和Alex Álvarez，Gnomon的奠基人交谈
+他说：虽然几乎所有学生都在高标准下有杰出表现
+但每个教室都有一两个人是摇滚巨星
+那种将来会无比成功，绝无问题找到工作的人
+于是我问他
+“摇滚巨星和其他人的不同之处是什么？”
+他脱口而出“他们寻求批评，而且真的对此上心”
+他没提到构图，光照，故事技巧，任何这类东西
+这就是让摇滚巨星和普罗大众不同的唯一个东西
+非常有趣
+从我个人的角度来讲
+我有这样一张画，我对此并不是很满意
+我发在推特上，我拿到了一些反馈，但我不确定该往哪个方向改善
+我当时就在Gnomon的会场，而Dylan Ekren就在那
+一个Disney的角色设计师
+于是我走上前去说“嗨”
+“我能给你看看我的作品吗？”
+“你懂的，我在这上拼了全力了，想听听你的看法”
+他说“当然”
+我拿出了iPhone，然后马上他就指着说
+“你用了两个不同的光源，这真的很怪，背光同时面向光源，这一点都不搭”
+“而且你混用了两种风格”
+“你用了个卡通风格的脸，然后你又加上了写实的头发”
+“你得让他们互相搭配。”
+非常有趣
+马上的，我明白了他的意思
+这一共只花了一分钟
+但帮我节省了几个小时的工作量
+我接着在这上做了一些工作，然后它有了很大的改进
+我希望我可以说这算是有提高
+这就是“获取反馈”的作用
+他的价值不言而喻</p>
+<p>第7点是要创作你真正喜爱的东西</p>
+<p>我个人认为动机是艺术中常被忽略的领域
+我们常认为伟大的艺术家，你给以给他们任何主题，他们都能做出伟大的作品
+我们一般都会这么想
+但实际上，如果你看看当代伟大画家和音乐家的作品，那都是他们真正感兴趣的东西
+ChristopherNolan，他创作有关他兴趣的电影
+有关心灵的状态、被困在什么里面和科幻一类的元素
+他真的对这些很感兴趣
+然后他构建这些故事，这些世界
+它们往往有着你难以在类似电影里找到的深度
+ElonMusk!
+他不是个艺术家，但也算是成功人士
+他有三个公司，SpaceX，Tesla和SolarCity，他建立这些公司是因为
+他对人类感兴趣，并想看到人类繁荣
+所以这也是算是个人的，内在的动机
+也是他真正感兴趣的东西
+我相信如果他开面包房的话，那一定会非常糟糕
+他又不是天才...
+好吧，他是天才
+但那种干什么什么赚钱的技术，那传说一样的东西
+我认为他真的很有那种专注于某个领域的艺术家的感觉
+举个和艺术有关的例子，Brian Eno伟大的艺术家
+做环境音乐，他说他投身于此，是因为他非常想聆听他想听到的音乐
+而这确实贯穿了他音乐的始终
+从而个人故事的角度，我记得我有在画一些画
+我把他们发到了Twitter和Facebook上
+就这些小素描，各种东西
+然后很快，几个月之后，人们说
+“所以你就只画可爱小姑娘？”然后我想到，“噢...”，这话真的影响到了我
+我在想“哦不，我要成为那种只画可爱小姑娘的人了！”这也是我家里人一直和我说的
+网上的人们，Instagram上的人们会说“为什么你只画小姑娘”
+我就想“我得平衡一下，于是我开始画男人”
+我开始画男的
+但这真的没效果
+我志不在此
+HectorSalamanca，我对这个系列没意见
+但我就是对此不感兴趣
+然后一想到那些，让某物变得好看所需要的努力
+你需要内在的动力
+我的心就不在这个上面
+我记得有…
+就在《流言终结者》播出十周年纪念前后
+反正是差不多的东西
+而且我其实也不看《流言终结者》
+我知道这是个很酷的节目，还有那些“科学！”一样的东西
+但我就是对它没什么兴趣
+但我觉得如果我给节目的二人组画个图的话，人们也许会喜欢
+结果并不是很好
+我懂得，我的心不在这上
+这个是出色的节目，但我单纯的不看它
+在这些失败的尝试不久之后
+我在浪费时间，我有六个月时间来完成这件事
+但我一直在浪费时间，然后我突然有了这个启示
+谁他妈的管别人的看法？
+又能怎么样？
+于是我回退一步，开始做我喜欢的东西
+实话实说，我觉得从主题的角度来说，小姑娘比绝大多数男人都更吸引我
+我就是这么想的
+生活中已经有足够多的繁文缛节了
+政府告诉你能做什么
+老板告诉你工作内容
+艺术，是少有的几个，你能真正做感兴趣的东西的领域
+而且我个人认为，如果你开始让他人干涉你的创作
+告诉你什么可以做，什么不能做，我觉得这是大错特错
+总之，创造你热爱的东西吧
+你能做出更出色的作品，真的是这样的，而且你会在长跑的途中保有动力</p>
+<p>这是总结
+每日工作，每一天都要花一些时间
+注重习惯的打造，这很重要
+别做完美主义者，尽管你认为这个是好事，但这基本上真的不是
+找到你的偶像，从他们那里偷窃
+有意识地学习，虽然这体验很吃屎，你需要走过这些来找到自己的弱点并攻克它们
+休息一下，这往往比一口气干完要好
+从每个人那里获取反馈
+把头埋进沙子里，蒙眼向前绝对不是一件好事
+最后，创作你热爱的东西
+谢谢大家！</p>
+<h1 id="译后"><a class="header" href="#译后">译后</a></h1>
+<p>可能有人注意到帖子标题和原作标题表达的完全不是一个东西,
+这个怎么说呢...算是我觉得更合适的标题吧...</p>
+<p>本文看翻一半的时候感觉有点想下车了,
+感谢中高考, 我现在一看到 &quot;举例子&quot; &quot;引资料&quot;的编稿方式就想吐,
+这总能让我想起来我看过的莫名其妙的议论文, 我写过的莫名其妙的议论文,
+几乎可以说是心理阴影一样的东西了...
+特别是文章里引用的人你还不是很喜欢...或者引用的是烂大街的国民偶像(</p>
+<p>不过还是干完了, 原作的标题说是高效率艺术家的习惯,
+但其实更像是绘画初学者的泛艺术心得一类的东西,
+这个展示里的东西, 和我自己的很多思考\教训不谋而合, 要是单独开贴自己说有种好为人师的嫌疑
+(特别是我还是菜鸡本鸡), 这里用别人话就感觉底气很足</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="PASWJ.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="CCCIPCCA.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="PASWJ.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="CCCIPCCA.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
