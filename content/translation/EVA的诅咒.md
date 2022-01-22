@@ -1,7 +1,7 @@
 ---
 title: "EVA的诅咒"
 date: 2022-01-22T11:55:34+08:00
-draft: true
+draft: false
 ---
 source: https://www.youtube.com/watch?v=rHIvs0Q-uKI&t=1105s
 
